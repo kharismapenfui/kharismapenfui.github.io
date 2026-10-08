@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Website GMIT Kharisma Penfui - Jemaat, pelayanan, warta jemaat dan informasi gereja.">
+  <title>GMIT Kharisma Penfui</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+
+
+
+</head>
+<body>
+
+  <header class="site-header" id="home">
+    <nav class="navbar container">
+      <a class="brand" href="#home" aria-label="GMIT Kharisma Penfui">
+        <span class="brand-logo">
+          <img src="/img/logogmit.jpg" alt="Logo GMIT Kharisma Penfui">
+          <span class="logo-fallback">✝</span>
+        </span>
+        <span>
+          <strong>GMIT Kharisma Penfui</strong>
+          <small>Jemaat & Pelayanan</small>
+        </span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Buka menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-panel">
+        <ul class="navbar-menu">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#tentang">About</a></li>
+          <li class="has-dropdown">
+            <button class="dropbtn" type="button" aria-expanded="false">Pelayanan <span>⌄</span></button>
+            <div class="dropdown-content">
+              <a href="#warta">Warta Jemaat</a>
+              <a href="#penabisan">Penabisan</a>
+              <a href="#video-aktivitas">Video Aktifitas</a>
+            </div>
+          </li>
+          <li><a href="#timeline">Timeline Iman</a></li>
+          <li><a href="#kontak">Contact</a></li>
+          <li><button class="admin-menu-btn" id="adminLoginBtn" type="button">⚙ Admin</button></li>
+        </ul>
+        <a class="nav-cta" href="#jadwal">Jadwal Ibadah <span>→</span></a>
+      </div>
+    </nav>
+
+    <section class="hero container">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> Selamat datang di rumah Tuhan</div>
+        <h1>JEMAAT <em>KHARISMA</em><br>PENFUI</h1>
+        <p class="hero-text">
+          Bertumbuh dalam iman, hidup dalam kasih, dan melayani dengan sukacita.
+          Mari berjalan bersama dalam kasih Kristus.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#tentang">Kenali Jemaat <span>→</span></a>
+          <a class="btn btn-soft" href="#timeline">Lihat Timeline Iman</a>
+        </div>
+        <div class="hero-note">
+          <span class="note-icon">✦</span>
+          <span>“Aku menyertai kamu senantiasa sampai kepada akhir zaman.”<br><b>Matius 28:20b</b></span>
+        </div>
+      </div>
+
+      <div class="hero-art photo-hero" aria-label="Foto Gereja GMIT Kharisma Penfui">
+        <div class="photo-glow"></div>
+        <img src="/img/gereja kharisama.jpg" alt="Gereja GMIT Kharisma Penfui">
+        <div class="photo-caption">
+          <span>GMIT KHARISMA PENFUI</span>
+          <small>Tempat bertumbuh dalam iman dan kasih</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- Foto gereja khusus tampilan HP -->
+    <div class="mobile-church-photo" aria-label="Foto Gereja GMIT Kharisma Penfui">
+      <img src="gereja kharisama.jpg" alt="Gereja GMIT Kharisma Penfui">
+      <div class="mobile-church-caption">
+        <strong>GMIT KHARISMA PENFUI</strong>
+        <span>Tempat bertumbuh dalam iman dan kasih</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="quick-info">
+      <div class="container info-grid">
+        <article><span>✝</span><div><b>Iman</b><small>Berakar dalam Kristus</small></div></article>
+        <article><span>♡</span><div><b>Kasih</b><small>Melayani dengan tulus</small></div></article>
+        <article><span>☀</span><div><b>Pengharapan</b><small>Menatap masa depan</small></div></article>
+        <article><span>♧</span><div><b>Persekutuan</b><small>Bertumbuh bersama</small></div></article>
+      </div>
+    </section>
+
+    <section class="section container" id="tentang">
+      <div class="section-heading">
+        <div>
+          <span class="eyebrow blue"><span></span> Tentang kami</span>
+          <h2>Gereja yang hadir untuk <em>melayani</em></h2>
+        </div>
+        <!-- <p>Ruang digital sederhana untuk membantu jemaat menemukan informasi, pelayanan, jadwal dan renungan dengan lebih mudah.</p> -->
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card about-main">
+          <div class="card-icon">⛪</div>
+          <h3>GMIT Kharisma Penfui</h3>
+          <p>
+            Website ini dikembangkan sebagai pusat informasi jemaat dan sarana komunikasi
+            pelayanan Jemaat GMIT Kharisma Penfui.
+            
+          </p>
+          <div class="mini-stat"><b>007</b><span>Jl. Penfui Klasis Kota Kupang Timur<br>Kota Kupang, Nusa Tenggara Timur</span></div>
+        </div>
+        <div class="feature-card">
+          <span>01</span><h3>Informasi Jemaat</h3><p>Warta jemaat dan informasi kegiatan lebih mudah ditemukan.</p>
+        </div>
+        <div class="feature-card">
+          <span>02</span><h3>Pelayanan</h3><p>Akses cepat ke Warta Jemaat, Penabisan dan Video Aktivitas.</p>
+        </div>
+        <div class="feature-card">
+          <span>03</span><h3>Persekutuan</h3><p>Membangun ruang digital yang hangat, sederhana dan responsif.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section services-section" id="pelayanan">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow blue"><span></span> Pelayanan jemaat</span>
+            <h2>Melayani dengan <em>kasih</em></h2>
+          </div>
+          <!-- <p>Temukan informasi pelayanan utama jemaat melalui tampilan yang sederhana, cepat, dan mudah diakses.</p> -->
+        </div>
+        <div class="service-grid">
+          <a class="service-card" href="#warta">
+            <span class="service-number">01</span><span class="service-icon">▤</span>
+            <h3>Warta Jemaat</h3>
+            <p>Ruang untuk warta, pengumuman, dan informasi kegiatan jemaat.</p>
+            <span class="service-link">Lihat informasi <b>→</b></span>
+          </a>
+          <a class="service-card" href="#video-aktivitas">
+            <span class="service-number">02</span><span class="service-icon">♫</span>
+            <h3>Video Aktivitas</h3>
+            <p>Dokumentasi pelayanan musik dan pujian dalam bentuk video.</p>
+            <span class="service-link">Tonton video <b>→</b></span>
+          </a>
+          <a class="service-card" href="#penabisan">
+            <span class="service-number">03</span><span class="service-icon">⌂</span>
+            <h3>Penabisan</h3>
+            <p>Dokumentasi proses penabisan dan perhadpan gereja Kharisma Penfui Kupang.</p>
+            <span class="service-link">Lihat dokumentasi <b>→</b></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section warta-section" id="warta">
+      <div class="container warta-box">
+        <div>
+          <span class="eyebrow blue"><span></span> Warta jemaat</span>
+          <h2>Informasi jemaat dalam satu <em>ruang</em></h2>
+          <div id="wartaContent">
+            <p>1. Ibadah Rumah Tangga Hari Selasa tgl 17 Agstus di rumah : Bpk Marthen Sing.</p>
+            <p>2. Ibadah Kaum Bapak Rabu tgl 18 Agustus di rumah : Bpk Marthen Sing.</p>
+            <p>3. Ibadah Kaum Ibu Hari Rabu tgl 18 Agustus di rumah : Ibu Septiana Serasehan.</p>
+            <p>4. Ibadah Pemuda Hari Rabu tgl 18 Agustus di rumah : Sdr/i Chornolius Palembangan.</p>
+            <p>5. Ibadah Rumah Tangga Hari Kamis tgl 19 Agustus di rumah : Bapak Melkiansus Perhania.</p>
+          </div>
+        </div>
+          <div class="warta-status segera-card">
+              <span>SEGERA HADIR</span>
+              <b>Warta & Pelayanan</b>
+              <div id="segeraContent" class="segera-rich-content">
+                <p>Pelayanan orang sakit oleh ibu pdt Septhia Serasehan bersama majelis di rayon.</p>
+              </div>
+          </div>
+      </div>
+    </section>
+
+    
+<div class="modern-quick-access container" aria-label="Akses cepat">
+  <a href="#jadwal"><span>📅</span><b>Jadwal Ibadah</b><small>Lihat jadwal pelayanan</small></a>
+  <a href="#warta"><span>📢</span><b>Informasi Jemaat</b><small>Pengumuman terbaru</small></a>
+  <a href="#video-aktivitas"><span>🎬</span><b>Media</b><small>Video & dokumentasi</small></a>
+  <a href="#kontak"><span>📍</span><b>Kontak</b><small>Hubungi gereja</small></a>
+</div>
+
+<section class="section schedule-section" id="jadwal">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow blue"><span></span> Jadwal & pelayanan</span>
+          <h2>Datang, bersekutu, bertumbuh dan <em>berbuah</em></h2>
+          <p></p>
+        </div>
+        <div class="schedule-grid">
+          <article class="schedule-card featured">
+            <span class="day">MINGGU</span><strong>08:00 wita</strong>
+            <h3>Ibadah Utama</h3>
+            <p>Persekutuan seluruh jemaat.</p>
+            <span class="pill">Ibadah Jemaat, Sekolah Minggu</span>
+          </article>
+          <article class="schedule-card ftr">
+            <span class="day">Selasa & Kamis</span><strong>19:00 wita</strong>
+            <h3>Ibadah Rumah Tangga</h3>
+            <p>Waktu teduh dan ucapan syukur.</p>
+            <span class="pill">Ibadah Rumah Tangga</span>
+          </article>
+          <article class="schedule-card">
+            <span class="day">Rabu</span><strong>19.00 wita</strong>
+            <h3>Ibadah Kategorial</h3>
+            <p>Waktu teduh dan ucapan syukur.</p>
+            <span class="pill">Kaum Bapak, Kaum Ibu, Pemuda.</span>
+          </article>
+           <article class="schedule-card">
+            <span class="day">Sabtu</span><strong>19.00 wita</strong>
+            <h3>Ibadah Lansia</h3>
+            <p>Waktu teduh dan ucapan syukur.</p>
+            <span class="pill">1 Bulan Sekali.</span>
+          </article>
+        </div>
+        <p class="small-note">* Silakan sesuaikan jam dan jenis ibadah dengan jadwal resmi GMIT Kharisma Penfui.</p>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="timeline">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow blue"><span></span> Visualisasi iman</span>
+            <h2>Timeline kehidupan <em>Yesus Kristus</em></h2>
+          </div>
+          <p>Klik setiap tahap untuk melihat penjelasan singkat dan referensi ayat.</p>
+        </div>
+
+        <div class="timeline" id="timelineList">
+          <button class="timeline-item" data-title="Nubuat Mesias" data-text="Perjanjian Lama memuat berbagai nubuat yang oleh iman Kristen dipahami menunjuk kepada Mesias yang akan datang." data-ref="Kejadian 3:15; Yesaya 7:14; Mikha 5:2">
+            <span class="timeline-dot">01</span><b>Nubuat Mesias</b><small>Janji keselamatan</small>
+          </button>
+          <button class="timeline-item" data-title="Kelahiran Yesus" data-text="Yesus lahir di Betlehem. Maria membungkus-Nya dengan kain lampin dan membaringkan-Nya di palungan." data-ref="Lukas 2:1–7">
+            <span class="timeline-dot">02</span><b>Kelahiran Yesus</b><small>Betlehem</small>
+          </button>
+          <button class="timeline-item" data-title="Masa Kanak-kanak" data-text="Yesus bertumbuh dan tinggal di Nazaret bersama Yusuf dan Maria. Ia juga tampil di Bait Allah ketika berusia dua belas tahun." data-ref="Lukas 2:39–52">
+            <span class="timeline-dot">03</span><b>Masa Kanak-kanak</b><small>Nazaret</small>
+          </button>
+          <button class="timeline-item" data-title="Pelayanan" data-text="Yesus memberitakan Kerajaan Allah, mengajar, melakukan mukjizat dan memanggil orang untuk percaya." data-ref="Matius 4–Yohanes 12">
+            <span class="timeline-dot">04</span><b>Pelayanan</b><small>Kasih & pengajaran</small>
+          </button>
+          <button class="timeline-item" data-title="Penyaliban" data-text="Yesus disalibkan di Golgota dan menyerahkan diri-Nya bagi manusia." data-ref="Matius 27; Markus 15; Lukas 23; Yohanes 19">
+            <span class="timeline-dot">05</span><b>Penyaliban</b><small>Golgota</small>
+          </button>
+          <button class="timeline-item" data-title="Kebangkitan" data-text="Yesus bangkit pada hari ketiga. Kebangkitan menjadi pusat pengharapan iman Kristen." data-ref="Matius 28; Markus 16; Lukas 24; Yohanes 20">
+            <span class="timeline-dot">06</span><b>Kebangkitan</b><small>Hari ketiga</small>
+          </button>
+          <button class="timeline-item" data-title="Kenaikan ke Surga" data-text="Yesus naik ke surga setelah memberi amanat kepada murid-murid-Nya untuk menjadi saksi." data-ref="Kisah Para Rasul 1:1–11">
+            <span class="timeline-dot">07</span><b>Kenaikan</b><small>Amanat & pengharapan</small>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section media-section" id="video-aktivitas">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow blue"><span></span> Video Pelayanan</span>
+            <h2>Video Aktivitas <em>GMIT Kharisma</em></h2>
+          </div>
+          <p>Simak dokumentasi pelayanan video aktivitas.</p>
+        </div>
+
+        <!-- video manual -->
+
+        <!-- <div class="media-card">
+          <video controls preload="metadata" playsinline>
+            <source src="vocal group.mp4" type="video/mp4">
+            Browser Anda tidak mendukung pemutaran video.
+          </video>
+        </div> -->
+
+
+        <div id="vocalGroupVideos" class="vocal-video-list" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section class="section media-section media-section-alt" id="penabisan">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <span class="eyebrow blue"><span></span> Pemandirian & Perhadapan 02-08-2006</span>
+            <h2>Pemandirian Gereja <em>GMIT Kharisma Penfui</em></h2>
+          </div>
+          <p>Dokumentasi proses Peresmian, Pemandirian dan Perhadapan Pendeta Elsa Sihasale Huwae di Jemaat GMIT Kharisma Klasis Kota Kupang Timur Tanggal 02 Agustus 2026.</p>
+        </div>
+        <div class="media-card">
+          <video controls preload="metadata" playsinline>
+            <source src="/img/penabisan.mp4" type="video/mp4">
+            Browser Anda tidak mendukung pemutaran video.
+          </video>
+        </div>
+      </div>
+    </section>
+
+    <section class="section admin-gallery-section" id="galeri-admin">
+      <div class="container">
+        <div class="section-heading centered">
+          <span class="eyebrow blue"><span></span> Galeri jemaat</span>
+          <h2>Dokumentasi <em>GMIT Kharisma</em></h2>
+          <!-- <p>Galeri ini dikelola oleh admin. Foto yang sudah ada pada dashboard tidak diubah.</p> -->
+        </div>
+        <div class="gallery-grid" id="publicGallery"></div>
+      </div>
+    </section>
+
+<section class="section" id="agenda-minggu-ini">
+  <div class="section-heading">
+    <div>
+      <span class="eyebrow">AGENDA</span>
+      <h2>Agenda Minggu Ini</h2>
+      <p>Kegiatan dan pelayanan yang akan berlangsung dalam minggu ini.</p>
+    </div>
+  </div>
+
+  <div class="agenda-card">
+    <div id="agendaList" class="agenda-list"></div>
+    <div id="agendaEmpty" class="agenda-empty" hidden>
+      Belum ada agenda untuk minggu ini.
+    </div>
+  </div>
+</section>
+
+
+    <section class="verse-section">
+      <div class="container verse-box">
+        <span class="quote-mark">“</span>
+        <blockquote>Ia sendiri telah memikul dosa kita di dalam tubuh-Nya di kayu salib, supaya kita, yang telah mati terhadap dosa, dapat hidup untuk kebenaran.</blockquote>
+        <cite>1 Petrus 2:24</cite>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="kontak">
+      <div class="container contact-grid">
+        <div>
+          <span class="eyebrow blue"><span></span> Hubungi kami</span>
+          <h2>Mari berjalan <em>bersama</em></h2>
+          <!-- <p>Informasi kontak dapat Anda lengkapi dengan nomor telepon, WhatsApp, email, media sosial dan lokasi Google Maps resmi gereja.</p> -->
+        </div>
+        <div class="contact-card">
+          <div><span>📍</span><p><b>Alamat</b><br>Jl. Penfui nomor 007 <br> Klasis Kota Kupang Timur.  <br>Kota Kupang, Nusa Tenggara Timur</p></div>
+          <div><span>✉</span><p><b>Gereja_Kharisma@yahoo.co.id</b><br><small></small></p></div>
+          <div><span>✆</span><p><b>0812 3456 7890</b><br><small></small></p></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section class="closing-cta">
+    <div class="container closing-inner">
+      <div>
+        <span class="eyebrow"><span></span> Mari bertumbuh bersama</span>
+        <h2>Iman, Kasih & <em>Pengharapan.</em></h2>
+        <p>Selamat datang di ruang digital GMIT Kharisma Penfui.</p>
+      </div>
+      <a class="btn btn-primary" href="#kontak">Hubungi Kami <span>→</span></a>
+    </div>
+  </section>
+
+
+
+<section class="section admin-agenda-section" id="admin-agenda" hidden>
+  <div class="section-heading">
+    <div>
+      <span class="eyebrow">ADMIN</span>
+      <h2>Kelola Agenda Minggu Ini</h2>
+      <p>Hanya Admin yang dapat menambah dan menghapus agenda.</p>
+    </div>
+  </div>
+
+  <div class="admin-agenda-card">
+    <form id="agendaForm" class="agenda-form">
+      <div class="agenda-form-grid">
+        <label>Hari
+          <select id="agendaDay" required>
+            <option value="Senin">Senin</option>
+            <option value="Selasa">Selasa</option>
+            <option value="Rabu">Rabu</option>
+            <option value="Kamis">Kamis</option>
+            <option value="Jumat">Jumat</option>
+            <option value="Sabtu">Sabtu</option>
+            <option value="Minggu">Minggu</option>
+          </select>
+        </label>
+        <label>Tanggal
+          <input id="agendaDate" type="date">
+        </label>
+        <label>Waktu
+          <input id="agendaTime" type="time" step="60" required>
+        </label>
+      </div>
+      <label>Nama Kegiatan
+        <input id="agendaTitle" type="text" maxlength="120" placeholder="Contoh: Ibadah Rumah Tangga" required>
+      </label>
+      <label>Keterangan
+        <textarea id="agendaNote" rows="3" maxlength="300" placeholder="Keterangan tambahan (opsional)"></textarea>
+      </label>
+      <button class="btn" type="submit">+ Tambah Agenda</button>
+      <button class="btn agenda-cancel-edit" id="agendaCancelEdit" type="button" hidden>✖ Batal Edit</button>
+    </form>
+
+    <div class="agenda-admin-list" id="agendaAdminList"></div>
+  </div>
+</section>
+
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>GMIT Kharisma Penfui</strong><span>Iman • Kasih • Pengharapan</span></div>
+      <p>© <span id="year"></span> GMIT Kharisma Penfui Kupang. ale_kpg.</p>
+    </div>
+
+</footer>
+
+  <div id="saveToast" class="save-toast" role="status" aria-live="polite"></div>
+
+  <!-- ================= ADMIN AREA ================= -->
+  <div class="admin-login-modal" id="adminLoginModal" aria-hidden="true">
+    <div class="admin-backdrop" data-admin-close></div>
+    <div class="admin-login-card" role="dialog" aria-modal="true" aria-labelledby="adminLoginTitle">
+      <button class="admin-close" type="button" data-admin-close aria-label="Tutup">×</button>
+      <div class="admin-lock">🔐</div>
+      <span class="eyebrow blue">Area terbatas</span>
+      <h3 id="adminLoginTitle">Login Admin</h3>
+      <p>Halaman ini khusus pengelola dashboard.</p>
+      <form id="adminLoginForm" autocomplete="off">
+        <label>Username<input id="adminUsername" name="username" type="text" required></label>
+        <label>Password<input id="adminPassword" name="password" type="password" required></label>
+        <p class="admin-error" id="adminLoginError"></p>
+        <button class="btn btn-primary admin-submit" type="submit">Masuk sebagai Admin →</button>
+      </form>
+    </div>
+  </div>
+
+  <section class="admin-panel" id="adminPanel" aria-hidden="true">
+    <div class="container">
+      <div class="admin-panel-head">
+        <div><span class="eyebrow blue"><span></span> Dashboard Admin</span><h2>Kelola <em>Informasi Jemaat</em></h2><p>Perubahan di bawah hanya dapat dilakukan setelah login admin.</p></div>
+      </div>
+
+      <div class="admin-grid">
+        <article class="admin-card">
+          <h3>📰 Informasi Jemaat dalam Satu Ruang</h3>
+          <p>Tambah atau hapus informasi yang tampil pada bagian Warta Jemaat.</p>
+          <div id="adminWartaList" class="admin-list"></div>
+          <form id="addWartaForm" class="admin-form">
+            <textarea id="newWarta" rows="3" placeholder="Tulis satu informasi jemaat...
+Contoh: Ibadah Rumah Tangga hari Selasa pukul 19.00 WITA di rumah Bpk. ..." required></textarea>
+            <button class="btn btn-primary" type="submit">+ Tambah Informasi</button>
+          </form>
+        </article>
+
+        <article class="admin-card segera-admin-card">
+          <h3>📢 Segera Hadir</h3>
+          <p>Ketikan pengumuman dengan format seperti Word. Anda dapat membuat paragraf, tebal, miring, garis bawah, rata kiri/tengah/kanan, serta daftar bernomor atau berpoin.</p>
+          <div class="segera-editor" aria-label="Editor Segera Hadir">
+            <div class="segera-toolbar" role="toolbar" aria-label="Format tulisan">
+              <button type="button" class="segera-tool" data-cmd="bold" title="Tebal"><b>B</b></button>
+              <button type="button" class="segera-tool" data-cmd="italic" title="Miring"><i>I</i></button>
+              <button type="button" class="segera-tool" data-cmd="underline" title="Garis bawah"><u>U</u></button>
+              <span class="segera-tool-sep"></span>
+              <button type="button" class="segera-tool" data-cmd="justifyLeft" title="Rata kiri">≡</button>
+              <button type="button" class="segera-tool" data-cmd="justifyCenter" title="Rata tengah">≡</button>
+              <button type="button" class="segera-tool" data-cmd="justifyRight" title="Rata kanan">≡</button>
+              <span class="segera-tool-sep"></span>
+              <button type="button" class="segera-tool" data-cmd="removeFormat" title="Hapus format">Tx</button>
+            </div>
+            <div id="adminSegera" class="segera-editor-input" contenteditable="true" role="textbox" aria-multiline="true" data-placeholder="Tulis pengumuman di sini..."></div>
+          </div>
+          <button class="btn btn-primary" id="saveSegeraBtn" type="button">Simpan Pengumuman</button>
+        </article>
+      </div>
+<!-- Upload foto -->
+      <article class="admin-card vocal-admin-card">
+        <h3>🎬 Video Aktivitas</h3>
+        <p>Tambahkan video aktivitas di sini. Video yang diunggah dapat dihapus kembali oleh Admin.</p>
+        <div id="adminVocalGroupList" class="vocal-admin-list"></div>
+        <label class="vocal-upload-box">
+          <span>+ Upload Video Aktivitas</span>
+          <input id="vocalGroupVideoInput" type="file" accept="video/mp4,video/webm,video/ogg,video/*">
+        </label>
+        <small class="vocal-upload-note">Disarankan format MP4 dan maksimal 2 video. Video tersimpan di browser/perangkat ini.</small>
+      </article>
+
+      <article class="admin-card admin-photo-card">
+        <h3>📷 Hanya 6 photo saja</h3>
+        <p>Admin dapat mengisi maksimal enam foto. Foto/gambar.</p>
+        <div class="admin-photo-grid">
+          <div class="upload-slot"><label>Foto 1<input type="file" accept="image/*" data-photo-input="0"></label><div class="photo-preview" data-photo-preview="0"></div><button type="button" class="delete-photo" data-delete-photo="0">Hapus Foto</button><button type="button" class="btn photo-save" data-save-photo="0">💾 Simpan Foto</button></div>
+          <div class="upload-slot"><label>Foto 2<input type="file" accept="image/*" data-photo-input="1"></label><div class="photo-preview" data-photo-preview="1"></div><button type="button" class="delete-photo" data-delete-photo="1">Hapus Foto</button><button type="button" class="btn photo-save" data-save-photo="1">💾 Simpan Foto</button></div>
+          <div class="upload-slot"><label>Foto 3<input type="file" accept="image/*" data-photo-input="2"></label><div class="photo-preview" data-photo-preview="2"></div><button type="button" class="delete-photo" data-delete-photo="2">Hapus Foto</button><button type="button" class="btn photo-save" data-save-photo="2">💾 Simpan Foto</button></div>
+          <div class="upload-slot"><label>Foto 4<input type="file" accept="image/*" data-photo-input="3"></label><div class="photo-preview" data-photo-preview="3"></div><button type="button" class="delete-photo" data-delete-photo="3">Hapus Foto</button><button type="button" class="btn photo-save" data-save-photo="3">💾 Simpan Foto</button></div>
+          <div class="upload-slot"><label>Foto 5<input type="file" accept="image/*" data-photo-input="4"></label><div class="photo-preview" data-photo-preview="4"></div><button type="button" class="delete-photo" data-delete-photo="4">Hapus Foto</button><button type="button" class="btn photo-save" data-save-photo="4">💾 Simpan Foto</button></div>
+          <div class="upload-slot"><label>Foto 6<input type="file" accept="image/*" data-photo-input="5"></label><div class="photo-preview" data-photo-preview="5"></div><button type="button" class="delete-photo" data-delete-photo="5">Hapus Foto</button><button type="button" class="btn photo-save" data-save-photo="5">💾 Simpan Foto</button></div>
+        </div>
+      </article>
+
+      <!-- Tombol keluar ditempatkan paling bawah dashboard admin -->
+      <button class="admin-logout admin-logout-bottom" id="adminLogoutBtn" type="button">Keluar</button>
+    </div>
+  </section>
+
+  <div class="modal" id="timelineModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close aria-label="Tutup">×</button>
+      <span class="modal-number">TIMELINE IMAN</span>
+      <h3 id="modalTitle"></h3>
+      <p id="modalText"></p>
+      <div class="modal-ref" id="modalRef"></div>
+    </div>
+  </div>
+
+  <button class="back-top" id="backTop" aria-label="Kembali ke atas">↑</button>
+  <script src="script.js"></script>
+
+</body>
+</html>

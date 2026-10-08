@@ -1,3 +1,4 @@
+﻿const path = require('path');
 require('dotenv').config();
 const express=require('express'),bcrypt=require('bcryptjs'),helmet=require('helmet'),rateLimit=require('express-rate-limit'),crypto=require('crypto');
 const app=express();
@@ -101,3 +102,4 @@ app.use((e,_q,res,_n)=>{console.error(e);res.status(500).json({error:'Terjadi ke
 
 if(require.main===module)app.listen(Number(process.env.PORT||3000),'0.0.0.0',()=>console.log('Website running'));
 module.exports=app;
+

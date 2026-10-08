@@ -1,0 +1,27 @@
+FIX VERCEL STATIC WEBSITE - GMIT KHARISMA
+
+Akar masalah yang sudah diverifikasi:
+- Deployment Vercel berstatus Ready.
+- Saat tombol Visit dibuka, responsnya adalah "Cannot GET /", sehingga request memang masuk ke Express/Vercel, bukan diarahkan ke GitHub Pages.
+- Server menggunakan express.static(__dirname, ...) dengan index.html di root.
+- Dokumentasi Express Vercel saat ini menyatakan static assets perlu berada di public/**.
+- Karena itu paket ini TIDAK mengubah Supabase, Environment Variables, domain, password, atau data agenda.
+
+Yang dilakukan skrip:
+1. Backup server.js.
+2. Membuat public/.
+3. Menyalin file website statis dari root ke public/ tanpa menyalin backend/config rahasia.
+4. Mengubah server.js agar local Express juga membaca public/.
+5. Mengecek sintaks server.js.
+6. git add -> commit -> push origin main.
+
+Cara menjalankan:
+- Ekstrak paket ini.
+- Salin FIX-VERCEL-PUBLIC.ps1 dan JALANKAN-FIX-VERCEL-PUBLIC.cmd ke:
+  D:\CODING\gereja\kharismanew
+- Klik JALANKAN-FIX-VERCEL-PUBLIC.cmd.
+- Jangan mengubah file lain atau setting Vercel/Supabase.
+
+Catatan:
+- Skrip hanya bekerja pada repository Git yang sudah terhubung ke origin dan branch main.
+- Backup server.js dibuat otomatis sebelum perubahan.
