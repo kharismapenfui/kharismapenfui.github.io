@@ -182,17 +182,19 @@ button{font:inherit}
     text-transform:uppercase;
     letter-spacing:2px;
     font-weight:800;
-    color:#d7f4ff;
+    /* color:#d7f4ff; */
+    color: #062f4f;
     display:flex;
     align-items:center;
-    gap:8px
+    gap:8px;
+
 }
 
 .eyebrow>span{
     width:28px;
     height:2px;
     background:#9de5ff;
-    display:inline-block
+    display:inline-block;
 }
 
 .eyebrow.blue{color:var(--blue-700)}
@@ -2261,3 +2263,67 @@ img{max-width:100%;height:auto}
 .save-toast.show{opacity:1;transform:translateY(0)}
 .save-toast.error{background:#8b1e2d}
 .photo-save{display:block;width:100%;margin-top:8px}
+
+
+/* PERBAIKAN POSISI AGENDA GMIT KHARISMA */
+#agenda-minggu-ini {
+padding-left: 20px;
+padding-right: 20px;
+box-sizing: border-box;
+}
+
+#agenda-minggu-ini #agendaList {
+width: 100%;
+max-width: 1100px;
+margin-left: auto;
+margin-right: auto;
+box-sizing: border-box;
+}
+
+#agenda-minggu-ini #agendaList .agenda-item {
+box-sizing: border-box;
+min-width: 0;
+}
+
+@media (max-width: 600px) {
+#agenda-minggu-ini {
+padding-left: 16px;
+padding-right: 16px;
+}
+}
+
+
+
+/* FIX FINAL: Judul dan kotak Agenda sejajar */
+#agenda-minggu-ini > .section-heading,
+#agenda-minggu-ini > .agenda-card {
+  width: calc(100% - 40px) !important;
+  max-width: 1100px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  box-sizing: border-box !important;
+}
+
+#agenda-minggu-ini > .section-heading {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+#agenda-minggu-ini > .agenda-card {
+  padding: 20px !important;
+}
+
+#agenda-minggu-ini #agendaList {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 600px) {
+  #agenda-minggu-ini > .section-heading,
+  #agenda-minggu-ini > .agenda-card {
+    width: calc(100% - 32px) !important;
+  }
+}
